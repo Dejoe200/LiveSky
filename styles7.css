@@ -1,0 +1,84 @@
+styles.css
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  animation: fade-in 1s ease;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+select, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background: #4e89ff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #326dff;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5em;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8em;
+  color: white;
+}
+
+/* Animation from Animista (you copied earlier) */
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% { -webkit-transform: scale(0.5); transform: scale(0.5); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes scale-up-center {
+  0% { -webkit-transform: scale(0.5); transform: scale(0.5); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
